@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterPage from '../components/FooterPAge'
+import FooterPage from '../components/FooterPage'
 
 const Footer = () => {
   return (
