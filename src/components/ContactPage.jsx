@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import resume from '../assets/resume/Resume_Kunal_data_analyst.pdf';
+import resume from '../assets/resume/Resume Frontend.pdf'
+
 
 
 const ContactPage = () => {
@@ -22,7 +23,7 @@ const ContactPage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
         try {
             const response = await fetch(scriptURL, {
                 method: 'POST',
@@ -51,37 +52,41 @@ const ContactPage = () => {
                         <p><i className="fa-solid fa-envelope"></i> kunalgaurav9688@gmail.com</p>
                         <p><i className="fa-solid fa-square-phone"></i> 9113561972</p>
                         <div className="social-icons">
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
-                            <a href=""><i class="bi bi-github"></i></a>
-                            <a href=""><i class="bi bi-app"></i></a>
+                            {/* <a href=""><i class="bi bi-facebook"></i></a> */}
+                            <a href="https://www.linkedin.com/in/kunal-gv25" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/KunalG9688" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            {/* <a href=""><i class="bi bi-app"></i></a> */}
                         </div>
                         <a href={resume} download className="btn btn2">Download CV</a>
                     </div>
                     <div className="contact-right">
                         <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
-                            <input 
-                                type="text" 
-                                name="Name" 
-                                placeholder="Your Name" 
-                                required 
-                                value={formData.Name} 
-                                onChange={handleChange} 
+                            <input
+                                type="text"
+                                name="Name"
+                                placeholder="Your Name"
+                                required
+                                value={formData.Name}
+                                onChange={handleChange}
                             />
-                            <input 
-                                type="email" 
-                                name="Email" 
-                                placeholder="Your Email" 
-                                required 
-                                value={formData.Email} 
-                                onChange={handleChange} 
+                            <input
+                                type="email"
+                                name="Email"
+                                placeholder="Your Email"
+                                required
+                                value={formData.Email}
+                                onChange={handleChange}
                             />
-                            <textarea 
-                                name="Message" 
-                                rows="6" 
-                                placeholder="Your Message" 
-                                value={formData.Message} 
-                                onChange={handleChange} 
+                            <textarea
+                                name="Message"
+                                rows="6"
+                                placeholder="Your Message"
+                                value={formData.Message}
+                                onChange={handleChange}
                             ></textarea>
                             <button type="submit" className="btn btn2">Submit</button>
                         </form>

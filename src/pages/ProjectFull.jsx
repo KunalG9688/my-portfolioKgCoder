@@ -2,26 +2,38 @@ import React,{useState} from 'react'
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
 import mountPic from '../assets/img/mount.jpg'
+import project1 from '../assets/img/proj1.png'
+import project2 from '../assets/img/proj2.png'
+import project3 from '../assets/img/proj3.png'
 import { useNavigate } from 'react-router-dom'
 
 const projects = [
     {
         id: 1,
         title: "FlowSync (Jira Clone) Project",
-        description: "Fullstack",
-        tech: "HTML, CSS, JavaScript, Next.js",
-        githubLink: "https://github.com/your-username/project-repo1",
-        liveDemo: "https://your-project-deploy-link1.com",
-        image: mountPic,
+        description: "Developed Flowsync, a responsive Jira clone designed for efficient task management and collaboration. Implemented features such as customizable workflows, task tracking, and a visually appealing interface. The landing page highlights key features, while the design ensures seamless performance across devices. Integrated both frontend and backend for full-stack functionality, focusing on user experience and streamlined project management.",
+        tech: "Next.js, Tailwind CSS, ShadCN UI, JavaScript, GitHub, VS Code",
+        githubLink: "https://github.com/KunalG9688/flowsync",
+        liveDemo: "https://flowsync-beta.vercel.app",
+        image: project1,
       },
       {
         id: 2,
-        title: "Project Title 2",
-        description: "Another brief description for a different project.",
-        tech: "HTML, CSS, JavaScript, Python, Django",
-        githubLink: "https://github.com/your-username/project-repo2",
-        liveDemo: "https://your-project-deploy-link2.com",
-        image: mountPic,
+        title: "Employee Management Dashboard",
+        description: "Built an Employee Management System with user authentication and real-time updates. Developed separate dashboards for employees and admins, allowing efficient management of employee data, roles, and performance analytics.",
+        tech: "React.js, MongoDB, Node.js, Tailwind CSS, GitHub, VS Code",
+        githubLink: "https://github.com/KunalG9688/EMS_Frontend",
+        liveDemo: "https://ems-frontend-beta.vercel.app",
+        image: project2,
+      },
+      {
+        id: 3,
+        title: "Forever E-commerce Website",
+        description: "Created a comprehensive e-commerce platform, Forever, featuring a landing page, multiple product pages, user authentication, and routing. Utilized React.js with Redux/Context API for state management and Tailwind CSS for responsive design. Integrated a seamless user interface for browsing, purchasing, and managing orders, enhancing the overall user experience.",
+        tech: "React.js, Redux/Context API, Tailwind CSS, React Router DOM, GitHub, VS Code",
+        githubLink: "https://github.com/KunalG9688/EMS_Frontend",
+        liveDemo: "https://ems-frontend-beta.vercel.app",
+        image: project3,
       },
       // Add more projects as needed
     ];
