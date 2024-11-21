@@ -32,7 +32,7 @@ const projects = [
         description: "Created a comprehensive e-commerce platform, Forever, featuring a landing page, multiple product pages, user authentication, and routing. Utilized React.js with Redux/Context API for state management and Tailwind CSS for responsive design. Integrated a seamless user interface for browsing, purchasing, and managing orders, enhancing the overall user experience.",
         tech: "React.js, Redux/Context API, Tailwind CSS, React Router DOM, GitHub, VS Code",
         githubLink: "https://github.com/KunalG9688/EMS_Frontend",
-        liveDemo: "https://ems-frontend-beta.vercel.app",
+        liveDemo: "https://forever-ecommerce-6hk7.vercel.app",
         image: project3,
       },
       // Add more projects as needed
